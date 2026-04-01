@@ -83,6 +83,14 @@
 }
 
 @media (max-width: 768px) {
+  .logo-img {
+    height: 35px;
+  }
+  
+  .logo-text {
+    font-size: 1.15rem;
+  }
+
   .desktop-menu {
     display: none;
   }
