@@ -1,0 +1,181 @@
+:root {
+  --bg-dark: #1B0B12;
+  --bg-gradient: linear-gradient(135deg, #1B0B12 0%, #200914 100%);
+  --primary-gold: #C6A15B;
+  --primary-gold-light: #D1B26A;
+  --secondary-bronze: #A67C52;
+  --text-cream: #F3E9D2;
+  --text-muted: #CFC7BD;
+
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Poppins', sans-serif;
+
+  --glass-bg: rgba(27, 11, 18, 0.6);
+  --glass-border: rgba(198, 161, 91, 0.2);
+  --glass-blur: blur(12px);
+
+  --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.5);
+  --glow-gold: 0 0 20px rgba(198, 161, 91, 0.3);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--bg-dark);
+  background-image: var(--bg-gradient);
+  color: var(--text-cream);
+  line-height: 1.6;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  color: var(--text-cream);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--primary-gold-light);
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.section {
+  padding: 5rem 0;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+  }
+  .section {
+    padding: 3.5rem 0;
+  }
+}
+
+.text-gold {
+  color: var(--primary-gold);
+}
+
+/* Glassmorphism utility */
+.glass {
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--shadow-soft);
+  border-radius: 1.5rem; /* xl */
+}
+
+/* Gold button utility */
+.btn-primary {
+  display: inline-block;
+  background: linear-gradient(90deg, var(--primary-gold), var(--primary-gold-light));
+  color: var(--bg-dark);
+  font-family: var(--font-body);
+  font-weight: 500;
+  padding: 0.75rem 2rem;
+  border-radius: 9999px; /* pill shape */
+  border: none;
+  cursor: pointer;
+  box-shadow: var(--glow-gold);
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 25px rgba(209, 178, 106, 0.6);
+  color: var(--bg-dark);
+}
+
+.btn-outline {
+  display: inline-block;
+  background: transparent;
+  color: var(--primary-gold-light);
+  font-family: var(--font-body);
+  font-weight: 500;
+  padding: 0.75rem 2rem;
+  border-radius: 9999px;
+  border: 1px solid var(--primary-gold);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.btn-outline:hover {
+  background: rgba(198, 161, 91, 0.1);
+  box-shadow: var(--glow-gold);
+}
+
+/* Card utility */
+.card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1.5rem;
+  transition: all 0.4s ease;
+  background: var(--glass-bg);
+  border: 1px solid transparent;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: var(--primary-gold);
+  box-shadow: var(--glow-gold);
+}
+
+/* Image zoom effect on hover */
+.img-zoom-container {
+  overflow: hidden;
+  width: 100%;
+}
+
+.img-zoom {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.card:hover .img-zoom {
+  transform: scale(1.05);
+}
+
+/* Input styles */
+.input-gold {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--text-cream);
+  padding: 1rem 1.5rem;
+  border-radius: 0.75rem;
+  font-family: var(--font-body);
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.input-gold:focus {
+  border-color: var(--primary-gold);
+  box-shadow: inset 0 0 10px rgba(198, 161, 91, 0.1);
+}
+
+.input-gold::placeholder {
+  color: var(--text-muted);
+}
