@@ -94,6 +94,38 @@
   min-height: 120px;
 }
 
+.form-section-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--primary-gold-light);
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(198, 161, 91, 0.2);
+}
+
+.form-group-row {
+  display: flex;
+  gap: 1rem;
+}
+
+select.input-gold {
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23C6A15B' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 1em;
+}
+
+select.input-gold option {
+  background: var(--bg-dark);
+  color: var(--text-cream);
+}
+
+input[type="date"].input-gold {
+  color-scheme: dark;
+}
+
 @media (max-width: 992px) {
   .contact-grid {
     grid-template-columns: 1fr;
@@ -107,5 +139,10 @@
   
   .contact-grid {
     gap: 2rem;
+  }
+  
+  .form-group-row {
+    flex-direction: column;
+    gap: 0;
   }
 }

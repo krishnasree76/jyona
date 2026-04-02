@@ -30,9 +30,9 @@ const Navbar = () => {
       <div className={`navbar-bg ${isScrolled || isMobileMenuOpen ? 'glass' : ''}`}></div>
       <div className="container nav-container">
         <a href="#home" className="logo">
-          <img src={logo} alt="JYONA Decorations Logo" className="logo-img" />
+          <img src={logo} alt="JYONA Decorations & Events Logo" className="logo-img" />
           <span className="logo-text">
-            <span className="text-gold">JYONA</span> Decorations
+            <span className="text-gold">JYONA</span> Decorations & Events
           </span>
         </a>
         

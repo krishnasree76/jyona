@@ -15,10 +15,16 @@ const About = () => {
               Crafting <span className="text-gold">Luxury</span> Experiences
             </h2>
             <p className="about-text">
-              Welcome to JYONA Decorations, where we turn your vision of the perfect event into a breathtaking reality. Based in the heart of Winsford, Cheshire, we specialize in high-end, customized event styling that leaves a lasting impression.
+              Welcome to Jyona Decorations and Events, where we bring your most special moments to life with elegance and creativity. Proudly based in Crewe, Cheshire, we specialize in bespoke decorations for weddings and birthdays that leave a lasting impression.
             </p>
             <p className="about-text">
-              Our passion lies in the meticulous details—the perfect floral arrangement, bespoke lighting, and premium decor elements seamlessly merging to create an unforgettable ambiance for your special day.
+              We understand how important these occasions are, and we believe every celebration deserves to feel magical—no matter the budget. That’s why we offer luxury-style décor at affordable prices, ensuring your event looks stunning without the stress.
+            </p>
+            <p className="about-text">
+              From romantic wedding setups and dreamy floral arrangements to fun, vibrant birthday décor and eye-catching balloon displays, every detail is thoughtfully designed to match your vision. Our passion for personalization means we can customize everything to suit your theme, style, and preferences. If you can imagine it, we can create it.
+            </p>
+            <p className="about-text">
+              At Jyona Decorations and Events, we don’t just decorate—we craft unforgettable memories that you and your loved ones will cherish forever.
             </p>
             <div className="about-stats">
               <div className="stat">

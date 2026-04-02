@@ -21,9 +21,9 @@ const Footer = () => {
         <div className="footer-grid">
           <div className="footer-brand">
             <div className="footer-logo">
-              <img src={logo} alt="JYONA Decorations Logo" className="footer-logo-img" />
+              <img src={logo} alt="JYONA Decorations & Events Logo" className="footer-logo-img" />
               <h2 className="footer-logo-text">
-                <span className="text-gold">JYONA</span><br />Decorations
+                <span className="text-gold">JYONA</span><br />Decorations & Events
               </h2>
             </div>
             <p className="footer-desc">
@@ -52,7 +52,7 @@ const Footer = () => {
         </div>
         
         <div className="footer-bottom">
-          <p>&copy; {new Date().getFullYear()} JYONA Decorations. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} JYONA Decorations & Events. All rights reserved.</p>
         </div>
       </div>
     </footer>
