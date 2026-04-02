@@ -113,6 +113,19 @@
     display: block;
   }
 
+  /* Make mobile navbar background more opaque and blurrier */
+  .navbar-bg.glass {
+    background: rgba(27, 11, 18, 0.95);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+  }
+
+  .mobile-menu.glass {
+    background: rgba(27, 11, 18, 0.95);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+  }
+
   .mobile-menu {
     display: flex;
     flex-direction: column;
