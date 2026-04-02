@@ -26,7 +26,8 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className={`navbar ${isScrolled ? 'scrolled glass' : ''}`}>
+    <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
+      <div className={`navbar-bg ${isScrolled || isMobileMenuOpen ? 'glass' : ''}`}></div>
       <div className="container nav-container">
         <a href="#home" className="logo">
           <img src={logo} alt="JYONA Decorations Logo" className="logo-img" />

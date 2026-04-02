@@ -9,8 +9,22 @@
   background: transparent;
 }
 
-.navbar.scrolled.glass {
+.navbar.scrolled {
   padding: 1rem 0;
+}
+
+.navbar-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transition: all 0.3s ease;
+  background: transparent;
+}
+
+.navbar-bg.glass {
   background: var(--glass-bg);
   backdrop-filter: var(--glass-blur);
   -webkit-backdrop-filter: var(--glass-blur);
