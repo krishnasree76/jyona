@@ -70,6 +70,11 @@
 .info-item p, .info-item a {
   color: var(--text-muted);
   font-size: 0.95rem;
+  word-break: break-word;
+}
+
+.info-item > div:not(.info-icon) {
+  min-width: 0;
 }
 
 .info-item a:hover {
@@ -92,5 +97,15 @@
 @media (max-width: 992px) {
   .contact-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact-info, .contact-form {
+    padding: 2rem 1.5rem;
+  }
+  
+  .contact-grid {
+    gap: 2rem;
   }
 }
