@@ -29,7 +29,7 @@ const itemVariants = {
 const Hero = () => {
   return (
     <section id="home" className="hero">
-      <motion.div 
+      <motion.div
         className="hero-bg"
         initial={{ scale: 1 }}
         animate={{ scale: 1.1 }}
@@ -41,20 +41,20 @@ const Hero = () => {
         }}
       />
       <div className="hero-overlay"></div>
-      
+
       {/* Decorative floating elements */}
-      <motion.div 
+      <motion.div
         className="floating-orb orb-1"
         animate={{ y: [0, -30, 0], opacity: [0.3, 0.6, 0.3] }}
         transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
       />
-      <motion.div 
+      <motion.div
         className="floating-orb orb-2"
         animate={{ y: [0, 40, 0], opacity: [0.2, 0.5, 0.2] }}
         transition={{ duration: 7, repeat: Infinity, ease: "easeInOut", delay: 1 }}
       />
 
-      <motion.div 
+      <motion.div
         className="container hero-content"
         variants={containerVariants}
         initial="hidden"
@@ -65,7 +65,7 @@ const Hero = () => {
           <span className="text-gold">into Memories</span>
         </motion.h1>
         <motion.p variants={itemVariants} className="hero-subtitle">
-          Premium event decoration services in Winsford, Cheshire. 
+          Premium event decoration services in Crewe, Cheshire.
           Elevate your special occasions with our luxury designs.
         </motion.p>
         <motion.div variants={itemVariants} className="hero-buttons">
@@ -74,13 +74,13 @@ const Hero = () => {
         </motion.div>
       </motion.div>
 
-      <motion.div 
+      <motion.div
         className="scroll-indicator"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 2, duration: 1 }}
       >
-        <motion.a 
+        <motion.a
           href="#about"
           animate={{ y: [0, 10, 0] }}
           transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}

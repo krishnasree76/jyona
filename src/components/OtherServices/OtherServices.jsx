@@ -62,10 +62,16 @@ const OtherServices = () => {
         </div>
 
         <div className="equipment-section glass">
-          <div className="equipment-header text-center">
-            <h3>Equipment <span className="text-gold">Rentals</span></h3>
-            <p>We rent high-quality equipment to elevate your event's atmosphere.</p>
+
+          {/* ✅ Badge */}
+          <div className="rental-badge">
+            We give for rentals
           </div>
+
+          <div className="equipment-header text-center">
+            <h3>Additional <span className="text-gold">Services</span></h3>
+          </div>
+
           <ul className="equipment-grid">
             {equipmentData.map((item, index) => (
               <li key={index} className="equipment-item">
