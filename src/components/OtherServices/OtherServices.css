@@ -219,6 +219,7 @@
 }
 
 /* 🔥 circle badge */
+/* desktop */
 .rental-badge {
   position: absolute;
   top: -20px;
@@ -241,16 +242,23 @@
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
 
   padding: 10px;
+  z-index: 2;
 }
 
-/* mobile fix */
 @media (max-width: 768px) {
   .rental-badge {
+    position: static;
+    /* ✅ remove absolute */
+    margin: 0 auto 1rem auto;
+    /* ✅ center it */
+
     width: 90px;
     height: 90px;
     font-size: 0.7rem;
-    top: -15px;
-    right: -10px;
+  }
+
+  .equipment-section {
+    text-align: center;
   }
 }
 
