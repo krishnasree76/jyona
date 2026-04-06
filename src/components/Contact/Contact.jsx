@@ -91,7 +91,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4>Website</h4>
-                  <a href="http://www.jyonadecorations.com" target="_blank" rel="noopener noreferrer">www.jyonadecorations.com</a>
+                  <a href="jyonadecorationsandevents.com" target="_blank" rel="noopener noreferrer">www.jyonadecorations.com</a>
                 </div>
               </div>
 
