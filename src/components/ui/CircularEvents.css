@@ -24,10 +24,13 @@
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  /* ✅ FULL IMAGE VISIBLE */
   border-radius: 1.5rem;
   box-shadow: var(--shadow-soft);
   border: 1px solid var(--glass-border);
+  background: #000;
+  /* optional for empty space */
 }
 
 .circular-content {
@@ -87,16 +90,20 @@
   .circular-image-container {
     height: 250px;
   }
+
   .circular-content {
     text-align: center;
     align-items: center;
   }
+
   .circular-name {
     font-size: 1.8rem !important;
   }
+
   .circular-quote {
     font-size: 1rem !important;
   }
+
   .circular-arrow-buttons {
     justify-content: center;
   }

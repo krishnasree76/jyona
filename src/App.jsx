@@ -6,6 +6,7 @@ import Events from './components/Events/Events';
 import OtherServices from './components/OtherServices/OtherServices';
 import Gallery from './components/Gallery/Gallery';
 import Contact from './components/Contact/Contact';
+import Testimonials from './components/Testimonials/Testimonials';
 import Footer from './components/Footer/Footer';
 import './index.css';
 
@@ -19,6 +20,7 @@ function App() {
         <Events />
         <OtherServices />
         <Gallery />
+        <Testimonials />
         <Contact />
       </main>
       <Footer />

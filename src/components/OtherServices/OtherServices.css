@@ -214,35 +214,31 @@
 }
 
 /* make parent relative */
-.equipment-section {
+/* .equipment-section {
   position: relative;
-}
+} */
 
 /* 🔥 circle badge */
 /* desktop */
 .rental-badge {
-  position: absolute;
-  top: -20px;
-  right: -20px;
+  position: static;
+  /* ✅ normal flow (VERY IMPORTANT) */
 
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
+  margin: 3rem auto 0 auto;
+  /* space + center */
+  width: fit-content;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  padding: 0.8rem 1.8rem;
+  border-radius: 999px;
 
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   font-weight: 600;
   color: #fff;
 
   background: radial-gradient(circle, #c6a15b, #8b6b2c);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
 
-  padding: 10px;
-  z-index: 2;
+  text-align: center;
 }
 
 @media (max-width: 768px) {

@@ -64,9 +64,9 @@ const OtherServices = () => {
         <div className="equipment-section glass">
 
           {/* ✅ Badge */}
-          <div className="rental-badge">
-            We give for rentals
-          </div>
+          {/* <div className="rental-badge">
+            We provide equipment for hire
+          </div> */}
 
           <div className="equipment-header text-center">
             <h3>Additional <span className="text-gold">Services</span></h3>
@@ -80,6 +80,9 @@ const OtherServices = () => {
               </li>
             ))}
           </ul>
+        </div>
+        <div className="rental-badge">
+          We provide equipment for hire
         </div>
       </div>
     </section>
